@@ -1,20 +1,21 @@
 <template>
-  <v-app>
-   kek
-  </v-app>
+    <v-app id="page">
+        <v-main>
+            <v-container>
+                <vor-home></vor-home>
+            </v-container>
+        </v-main>
+    </v-app>
 </template>
 
+
 <script>
+    import HomeVue from './views/Home'
 
-
-export default {
-  name: 'App',
-
-  components: {
-  },
-
-  data: () => ({
-    //
-  }),
-};
+    export default {
+        components: {
+            vorHome: HomeVue
+        }
+    }
 </script>
+
